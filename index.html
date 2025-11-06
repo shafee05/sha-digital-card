@@ -177,9 +177,13 @@ body{
         </div>
         <div class="face back">
           <div class="qr-container">
-            <div class="qr-code"><img src="./QR.png" alt="QR Code"></div>
-            <div class="qr-label">Scan to Book Your First Coaching Session</div>
-          </div>
+  <div class="qr-code">
+    <img src="./QR.png" alt="QR Code" 
+         onerror="console.log('QR code failed to load'); this.style.display='none';"
+         onload="console.log('QR code loaded successfully')">
+  </div>
+  <div class="qr-label">Scan to Book Your First Coaching Session</div>
+</div>
           <div class="contact-info">
             <div class="email">md.shafee05s@gmail.com</div>
             <div class="location">Hyderabad, India</div>
